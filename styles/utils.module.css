@@ -50,3 +50,14 @@
 .lightText {
     color: #666;
 }
+
+.centerContent {
+    display: flex;
+    justify-content: space-around;
+}
+
+.sizeContent {
+    width: 100px;
+    height: 50%;
+}
+
