@@ -1,7 +1,11 @@
 ---
-title: 'Two Forms of Pre-rendering'
-date: '2020-01-01'
+title: 'New Website'
+date: '2021-02-13'
 ---
+
+Welcome to my new website! I have never created a personal website,  and after 4 years of being involved in coding, I thought I'd make one.
+
+After some thinking, I have decided to create this website with **Next.js**, which is built on top of **React**. Plain old vanilla HTML and JavaScript sites has some downfalls. Next.js has some advantages that make it quicker to render and easier to develop.
 
 Next.js has two forms of pre-rendering: **Static Generation** and **Server-side Rendering**. The difference is in **when** it generates the HTML for a page.
 
