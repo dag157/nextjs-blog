@@ -1,0 +1,12 @@
+.brandLogo {
+    width: 30px;
+    height: 30px;
+}
+
+.hyperLink a:link {
+    text-decoration: none;
+}
+
+.hyperLink a:visited {
+    text-decoration: none;
+}
