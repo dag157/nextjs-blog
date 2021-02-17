@@ -1,5 +1,5 @@
 ---
-title: 'Scraping Craiglist for Emails with Python'
+title: 'Scraping Craigslist for Emails with Python'
 date: '2021-02-16'
 url: 'post-2-Scraping_Craigslist_for_emails'
 ---
