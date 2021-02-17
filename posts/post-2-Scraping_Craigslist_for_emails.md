@@ -17,11 +17,27 @@ pip install selenium beautifulsoup4
 
 Then, let's add the following code to email_scraper.py. This code will instantiate our webdriver and also set the page which we want to scrape.
 
-<script src="https://gist.github.com/dag157/ac9df6eab4162852566cf9cc94eba7bf.js"></script>
+<iframe 
+    width="100%"
+    height="753"
+    frameBorder="0"
+    src="data:text/html;charset=utf-8,
+    <head><base target='_blank' /></head>
+    <body><script src='https://gist.github.com/dag157/ac9df6eab4162852566cf9cc94eba7bf.js'></script>
+    </body>">
+</iframe>
 
 Next, we want to add in our implementation. For simplicity, I set our limit to 500 different postings. Our code will list each posting on the craiglist page we selected and then crawl each link. Once we crawl the link, we find the email listed in posting and write it to a text file.
 
-<script src="https://gist.github.com/dag157/1cf6331a188b788aa5f34f85b5c55ac3.js"></script>
+<iframe 
+    width="100%"
+    height="665"
+    frameBorder="0"
+    src="data:text/html;charset=utf-8,
+    <head><base target='_blank' /></head>
+    <body><script src='https://gist.github.com/dag157/1cf6331a188b788aa5f34f85b5c55ac3.js'></script>
+    </body>">
+</iframe>
 
 We can just run the code easy as well.
 
