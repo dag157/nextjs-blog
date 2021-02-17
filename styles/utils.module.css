@@ -56,6 +56,11 @@
     justify-content: space-around;
 }
 
+.centerContentCenter {
+    display: flex;
+    justify-content: center;
+}
+
 .sizeContent {
     width: 100px;
     height: 50%;

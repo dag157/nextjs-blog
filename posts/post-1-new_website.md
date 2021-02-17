@@ -1,6 +1,7 @@
 ---
 title: 'New Website'
 date: '2021-02-13'
+url: 'post-1-new_website'
 ---
 
 Welcome to my new website! I have never created a personal website,  and after 4 years of being involved in coding, I thought I'd make one.
