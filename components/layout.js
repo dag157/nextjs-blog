@@ -1,13 +1,23 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from './layout.module.css'
-import utilStyles from '../styles/utils.module.css'
-import Link from 'next/link'
+import Head from 'next/head';
+import Image from 'next/image';
+import styles from './layout.module.css';
+import utilStyles from '../styles/utils.module.css';
+import Link from 'next/link';
 
-const name = 'Dominick Gurnari'
-export const siteTitle = 'Dominick Gurnari'
+const name = 'Dominick Gurnari';
+export const siteTitle = 'Dominick Gurnari';
+import ReactGA from 'react-ga';
+import React, {useEffect} from 'react';
 
 export default function Layout({ children, home }) {
+
+  useEffect(() => {
+    if (!window.GA_INITIALIZED) {
+        initializeReactGA()
+        window.GA_INITIALIZED = true
+    }
+  })
+
   return (
     <div className={styles.container}>
       <Head>
@@ -70,4 +80,9 @@ export default function Layout({ children, home }) {
       )}
     </div>
   )
+
+  function initializeReactGA() {
+    ReactGA.initialize('G-EN70X9JND7');
+    ReactGA.pageview('/home');
+  }
 }
