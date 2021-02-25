@@ -13,8 +13,8 @@ export default function Layout({ children, home }) {
 
   useEffect(() => {
     if (!window.GA_INITIALIZED) {
-        initializeReactGA()
-        window.GA_INITIALIZED = true
+        initializeReactGA();
+        window.GA_INITIALIZED = true;
     }
   })
 
@@ -82,7 +82,7 @@ export default function Layout({ children, home }) {
   )
 
   function initializeReactGA() {
-    ReactGA.initialize('G-EN70X9JND7');
+    ReactGA.initialize('UA-114828647-3');
     ReactGA.pageview('/home');
   }
 }
