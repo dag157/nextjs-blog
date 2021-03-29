@@ -1,7 +1,7 @@
 ---
 title: 'Scraping Craigslist for Emails with Python'
 date: '2021-02-16'
-url: 'post-2-Scraping_Craigslist_for_emails'
+url: 'posts/post-2-Scraping_Craigslist_for_emails'
 ---
 
 Python is great for scripting. It's easy to read, write and has a lot of great libraries for a variety of things. One of the things I use as a software engineer has been selenium for automated testing. However, this can great for scraping web pages as well. Here's a simple tutorial for creating a webscraper in Python for grabbing emails on a craiglist page. They're randomized by craiglist, but they still forward emails to the correct email address.
