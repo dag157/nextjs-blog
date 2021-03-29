@@ -9,7 +9,7 @@ export const siteTitle = 'Dominick Gurnari';
 import ReactGA from 'react-ga';
 import React, {useEffect} from 'react';
 
-export default function Layout({ children, home }) {
+export default function Layout({ children, home, post }) {
 
   useEffect(() => {
     if (!window.GA_INITIALIZED) {
@@ -24,7 +24,7 @@ export default function Layout({ children, home }) {
         <link rel="icon" href="/favicon.ico" />
         <meta
           name="description"
-          content="Learn how to build a personal website using Next.js"
+          content="Dominick Gurnari"
         />
         <meta
           property="og:image"
@@ -36,7 +36,7 @@ export default function Layout({ children, home }) {
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
       <header className={styles.header}>
-        {home ? (
+        {home && (
           <>
             <Image
               priority
@@ -46,9 +46,11 @@ export default function Layout({ children, home }) {
               width={144}
               alt={name}
             />
-            <h1 className={utilStyles.heading2Xl}>{name}</h1>
+            <h1 className={utilStyles.heading2Xl}><span style={{color : '#E60023'}}>Dom</span>inick Gurnari</h1>
           </>
-        ) : (
+        )
+        }
+        {!home && post && (
           <>
             <Link href="/">
               <a>
@@ -67,6 +69,22 @@ export default function Layout({ children, home }) {
                 <a className={utilStyles.colorInherit}>{name}</a>
               </Link>
             </h2>
+          </>
+        )}
+        {!home && !post && (
+          <>
+            <Link href="/services">
+              <a>
+                <Image
+                  priority
+                  src="/images/laptop-code-solid.svg"
+                  className={utilStyles.borderCircle}
+                  height={108}
+                  width={108}
+                  alt={name}
+                />
+              </a>
+            </Link>
           </>
         )}
       </header>

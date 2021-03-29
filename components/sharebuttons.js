@@ -44,7 +44,7 @@ export default function Sharebuttons({ children, postURL }) {
   );
 
   function constructURL(postURL) {
-    const url = 'https://dominickgurnari.com/posts/' + postURL;
+    const url = 'https://dominickgurnari.com/' + postURL;
     return url;
   };
 }

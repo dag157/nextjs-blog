@@ -36,7 +36,7 @@ export default function Home({ allPostsData }) {
         <p>Hello, my name is Dominick. I am a software engineer👨‍💻 aspiring polyglot🇪🇸🇮🇹🇧🇷 and trying to make <a href="http://www.curieye.com" target="_blank">robot tours</a> a thing.</p>
       </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <h2 className={utilStyles.headingLg}>Blog</h2>
+        <h2 className={utilStyles.headingLg}><span style={{color : '#E60023'}}>Blo</span>g</h2>
         <ul className={utilStyles.list}>
           {allPostsData.map(({ id, date, title }) => (
             <li className={utilStyles.listItem} key={id}>
