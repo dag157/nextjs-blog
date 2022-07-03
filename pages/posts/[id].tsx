@@ -34,7 +34,7 @@ export async function getStaticPaths() {
 
 export default function Post({ postData }) {
     return (
-        <Layout post>
+        <Layout post={true} home={false}>
             <Head>
                 <title>{postData.title}</title>
             </Head>
@@ -45,7 +45,7 @@ export default function Post({ postData }) {
                 </div>
                 <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
             </article>
-            <Sharebuttons postURL={postData.url} />
+            <Sharebuttons children={false} postURL={postData.url} />
         </Layout>
     )
 }

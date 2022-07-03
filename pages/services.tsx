@@ -21,7 +21,7 @@ export async function getStaticProps() {
 export default function Services({ allPostsData }) {
   const brandlogos = classnames(utilStyles.centerContent, iconStyle.hyperLink);
   return (
-    <Layout>
+    <Layout home={false} post={false}>
       <Head>
         <title>Services</title>
       </Head>
@@ -32,47 +32,51 @@ export default function Services({ allPostsData }) {
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <h1 className={utilStyles.headingXl}><RedText str={'Services'}></RedText></h1>
         <div className={utilStyles.centerContent}>
-            <Card 
+            <Card
                 img_path='/images/sitemap-solid.svg'
                 card_title='Mock Interviews'
                 card_txt='The mock interview sessions include behavioral and technical portions. I offer both 30 minute phone screens and 1 hour technical interviews. After the interview, I will follow up with a detailed report within 24 hours with an evaluation, including improved question responses and resources to help you improve your interviewing skills.'
                 card_height={1008}
                 card_width={820}
+                reverse={false}
             >
             </Card>
         </div>
         <br />
         <div className={utilStyles.centerContent}>
-            <Card 
+            <Card
                 img_path='/images/file-solid.svg' 
                 card_title='Resume Review'
                 card_txt='The resume service will include a detailed report on your resume, including ways you can improve it and general feedback. I also offer to help you create a new resume if needed.'
                 card_height={1008}
                 card_width={420}
-                reverse
+                reverse={true}
             >
             </Card>
         </div>
         <br />
         <div className={utilStyles.centerContent}>
-            <Card 
+            <Card
                 img_path='/images/chalkboard-teacher-solid.svg'
                 card_title='Tutoring'
                 card_txt='Interested in learning how to program? I offer one on one live sessions to teach you the basics. Some general topics include web development, object oriented programming and cloud services.'
                 card_height={1008}
                 card_width={420}
+                reverse={false}
             >
             </Card>
         </div>
         <br />
         <div className={utilStyles.centerContent}>
-            <Link className={utilStyles.button} href='https://calendly.com/dominickgurnari/schedule'>
+          <div className={utilStyles.button}>
+            <Link href='https://calendly.com/dominickgurnari/schedule'>
                 <button className={utilStyles.button} type="button">Schedule a session with me</button>
             </Link>
+          </div>
         </div>
       </section>
       <br />
-      <Sharebuttons postURL={'services'} />
+      <Sharebuttons children={null} postURL={'services'} />
     </Layout>
   )
 }

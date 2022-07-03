@@ -6,15 +6,15 @@ import Link from 'next/link';
 
 const name = 'Dominick Gurnari';
 export const siteTitle = 'Dominick Gurnari';
-import ReactGA from 'react-ga';
-import React, {useEffect} from 'react';
+import * as ReactGA from 'react-ga';
+import {useEffect} from 'react';
 
 export default function Layout({ children, home, post }) {
 
   useEffect(() => {
-    if (!window.GA_INITIALIZED) {
+    if (!(window as any).GA_INITIALIZED) {
         initializeReactGA();
-        window.GA_INITIALIZED = true;
+        (window as any).GA_INITIALIZED = true;
     }
   })
 

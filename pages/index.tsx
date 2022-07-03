@@ -23,7 +23,7 @@ export async function getStaticProps() {
 export default function Home({ allPostsData }) {
   const brandlogos = classnames(utilStyles.centerContent, iconStyle.hyperLink);
   return (
-    <Layout home>
+    <Layout home={true} post={false}>
       <Head>
         <title>{siteTitle}</title>
       </Head>
@@ -33,7 +33,7 @@ export default function Home({ allPostsData }) {
           <p><a href="https://www.linkedin.com/in/dominick-gurnari/" target="_blank"><FontAwesomeIcon className={iconStyle.brandLogo} icon={faLinkedin} /> LinkedIn</a></p>
           <p><a href="https://github.com/dag157" target="_blank"><FontAwesomeIcon className={iconStyle.brandLogo} icon={faGithub} /> Github</a></p>
         </div>
-        <p>Hello, my name is Dominick. I am a software engineer👨‍💻 aspiring polyglot🇪🇸🇮🇹🇧🇷 and trying to make <a href="http://www.curieye.com" target="_blank">robot tours</a> a thing.</p>
+        <p>Hello, my name is Dominick. I am a software engineer👨‍💻 aspiring polyglot🇪🇸🇮🇹🇧🇷 and enjoy building things.</p>
       </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <h2 className={utilStyles.headingLg}><span style={{color : '#E60023'}}>Blo</span>g</h2>
