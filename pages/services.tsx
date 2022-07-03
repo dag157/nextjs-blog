@@ -68,9 +68,11 @@ export default function Services({ allPostsData }) {
         </div>
         <br />
         <div className={utilStyles.centerContent}>
-            <Link className={utilStyles.button} href='https://calendly.com/dominickgurnari/schedule'>
+          <div className={utilStyles.button}>
+            <Link href='https://calendly.com/dominickgurnari/schedule'>
                 <button className={utilStyles.button} type="button">Schedule a session with me</button>
             </Link>
+          </div>
         </div>
       </section>
       <br />
