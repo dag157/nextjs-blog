@@ -4,6 +4,14 @@
     font-weight: 800;
     letter-spacing: -0.05rem;
     margin: 1rem 0;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .heading2Xl {
+        font-size: 2rem;
+        text-align: center;
+    }
 }
   
 .headingXl {
